@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; display: flex; justify-content: center; align-items: flex-start; padding: 10px; min-height: 100vh; }
+.container { width: 100%; max-width: 480px; height: auto; background-color: #f8f9fa; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); overflow: hidden; display: flex; flex-direction: column; }
+header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px 20px 20px; text-align: center; }
+h1 { font-size: 28px; margin-bottom: 8px; }
+.subtitle { font-size: 12px; opacity: 0.9; }
+.date-selector { padding: 15px 20px; background: white; display: flex; gap: 10px; align-items: center; border-bottom: 1px solid #eee; }
+.date-selector label { font-weight: bold; font-size: 14px; }
+input[type="date"] { padding: 8px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; flex: 1; }
+.card { background: white; border-radius: 15px; padding: 20px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.card h2 { font-size: 18px; margin-bottom: 15px; color: #333; }
+.profile-info { display: flex; flex-direction: column; gap: 10px; }
+.info-item { display: flex; justify-content: space-between; padding: 10px; background: #f8f9fa; border-radius: 8px; font-size: 14px; }
+.info-label { font-weight: bold; color: #667eea; }
+.goal-calories { padding: 15px; background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%); color: white; border-radius: 12px; text-align: center; font-weight: bold; margin-top: 10px; font-size: 16px; }
+.edit-btn { padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-top: 10px; font-weight: bold; }
+.stats-container { text-align: center; }
+.calories-display { font-size: 36px; font-weight: bold; color: #667eea; margin: 20px 0; }
+.progress-bar { width: 100%; height: 40px; background-color: #e9ecef; border-radius: 20px; overflow: hidden; margin: 20px 0; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); transition: width 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px; }
+.calorie-status { font-size: 14px; color: #666; margin: 10px 0; }
+.meal-breakdown { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 15px 0; }
+.meal-item { padding: 15px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; text-align: center; }
+.meal-label { font-size: 12px; color: #666; margin-bottom: 8px; font-weight: bold; }
+.meal-calories { font-size: 24px; font-weight: bold; color: #667eea; }
+input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: inherit; margin-bottom: 10px; }
+input:focus, select:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); }
+button { padding: 12px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: bold; width: 100%; }
+button:hover { transform: scale(0.98); }
+.meal-type-selector { display: flex; gap: 10px; margin-bottom: 15px; }
+.meal-type-btn { flex: 1; padding: 12px; background-color: #e9ecef; border: 2px solid #dee2e6; border-radius: 8px; cursor: pointer; font-weight: 500; }
+.meal-type-btn.active { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-color: #667eea; }
+.food-input-group { display: flex; gap: 10px; margin-bottom: 15px; }
+.food-input-group input { flex: 1; margin-bottom: 0; }
+.food-input-group button { flex-shrink: 0; width: auto; margin-bottom: 0; }
+.quick-foods-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 15px; }
+.quick-food-btn { padding: 10px; background-color: #e9ecef; border: 1px solid #dee2e6; border-radius: 8px; cursor: pointer; font-size: 12px; }
+.quick-food-btn:hover { background: #667eea; color: white; }
+.food-entry { display: flex; justify-content: space-between; align-items: center; padding: 12px; background-color: #f8f9fa; border-radius: 8px; margin-bottom: 8px; font-size: 14px; }
+.food-name { font-weight: 500; flex: 1; }
+.delete-btn { padding: 5px 10px; background-color: #dc3545; font-size: 12px; margin-bottom: 0; }
+.recommendations-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.recommendation-card { padding: 15px; background: white; border-radius: 12px; border-left: 4px solid #667eea; }
+.recommendation-card h4 { margin-bottom: 8px; font-size: 16px; }
+.recommendation-calories { font-size: 18px; font-weight: bold; color: #667eea; margin: 8px 0; }
+.recommendation-reason { font-size: 12px; color: #666; }
+.message-box { padding: 15px; background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%); color: white; border-radius: 12px; margin-bottom: 15px; font-size: 16px; font-weight: bold; text-align: center; }
+.form-container { padding: 20px; background: white; border-radius: 15px; margin: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.form-container h2 { margin-bottom: 15px; color: #333; }
+#profileSection { overflow-y: auto; max-height: 100vh; }
+#statsSection, #mealTrackerSection, #recommendationSection { overflow-y: auto; }
+.main-grid { display: flex; flex-direction: column; }
+@media (max-width: 768px) { .quick-foods-grid { grid-template-columns: repeat(2, 1fr); } }

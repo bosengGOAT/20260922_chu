@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🍽️ 식단관리 앱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ 식단관리</h1>
+            <p class="subtitle">건강한 식단 관리</p>
+        </header>
+
+        <div class="date-selector">
+            <label>📅</label>
+            <input type="date" id="dateInput">
+        </div>
+
+        <div style="overflow-y: auto; flex: 1; padding-bottom: 20px;">
+            <div id="profileSection"></div>
+            <div id="statsSection"></div>
+            <div id="mealTrackerSection"></div>
+            <div id="recommendationSection"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
